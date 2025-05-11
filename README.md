@@ -25,11 +25,11 @@ The goal of this project was to develop a closed-loop control system capable of 
 ### Hardware
 - **MSP430 Microcontroller**
 - **Thermo-Electric Cooler (TEC)**
-- **Temperature Sensor (e.g., thermistor or LM35)**
+- **Temperature Sensor**
 - **Power driver circuit for TEC**
 
 ### Software
-- **MSP430 C firmware (Code Composer Studio)**
+- **MSP430 C firmware **
 - **MATLAB GUI for PID tuning and data plotting**
 - **Serial communication protocol for data exchange**
 
