@@ -1,7 +1,6 @@
 # 🌡️ PID Temperature Control System with MSP430 + MATLAB GUI
 
 This project implements a **closed-loop temperature control system** using an MSP430 microcontroller and a **MATLAB-based GUI**. A PID (Proportional–Integral–Derivative) controller is used to regulate the temperature of a thermoelectric cooler (TEC) using real-time thermistor feedback.
-![Pid Temperature Control Project Image](images/pid_demo.jpg)
 ---
 
 ## 📁 Project Structure
