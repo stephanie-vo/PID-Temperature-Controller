@@ -4,12 +4,14 @@ This project implements a **closed-loop temperature control system** using an MS
 ---
 
 ## 📁 Project Structure
+```
 PID-Control-System/
 ├── images/
-├── main.c # MSP430 firmware for ADC sampling, UART comms, and PWM control
-├── myscope.m # MATLAB GUI controller and PID logic
-├── myscope.fig # MATLAB GUI layout file
+├── main.c            # MSP430 firmware for ADC sampling, UART comms, and PWM control
+├── myscope.m         # MATLAB GUI controller and PID logic
+├── myscope.fig       # MATLAB GUI layout file
 ├── README.md
+```
 
 ---
 ## 🎯 Features
