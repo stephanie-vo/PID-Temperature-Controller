@@ -1,22 +1,25 @@
 # 🌡️ PID Temperature Control System with MSP430 + MATLAB GUI
 
-This project implements a **Proportional-Integral-Derivative (PID)** controller using an **MSP430 microcontroller** and a **MATLAB graphical user interface (GUI)** to regulate the temperature of a **thermo-electric cooler (TEC)**. It demonstrates how embedded hardware and desktop software can work together for real-time temperature monitoring and control.
+This project implements a **closed-loop temperature control system** using an MSP430 microcontroller and a **MATLAB-based GUI**. A PID (Proportional–Integral–Derivative) controller is used to regulate the temperature of a thermoelectric cooler (TEC) using real-time thermistor feedback.
 
 ---
 
-## 📦 Project Overview
-
-The goal of this project was to develop a closed-loop control system capable of maintaining a user-defined temperature using feedback from a temperature sensor. A PID algorithm was implemented on the MSP430 MCU to control the power to a TEC. Users could set the desired temperature and tune the PID gains through a MATLAB GUI that also displayed the real-time temperature profile.
+## 📁 Project Structure
+PID-Control-System/
+├── main.c # MSP430 firmware for ADC sampling, UART comms, and PWM control
+├── myscope.m # MATLAB GUI controller and PID logic
+├── myscope.fig # MATLAB GUI layout file
+├── README.md
 
 ---
-
 ## 🎯 Features
 
-- Real-time temperature monitoring and logging via MATLAB GUI
-- User-adjustable PID parameters (K<sub>P</sub>, K<sub>I</sub>, K<sub>D</sub>)
-- Temperature setpoint input and tracking
-- Serial communication between MATLAB and MSP430
-- Ziegler-Nichols tuning method for parameter estimation
+- Real-time temperature sensing using thermistor and ADC
+- Serial communication between MSP430 and MATLAB via UART
+- Interactive MATLAB GUI with PID tuning inputs (Kp, Ki, Kd)
+- Live plotting of temperature vs. time
+- Visual display of PID terms and controller output
+- Bi-directional PWM control for heating and cooling (via TEC)
 
 ---
 
@@ -34,13 +37,3 @@ The goal of this project was to develop a closed-loop control system capable of 
 - **Serial communication protocol for data exchange**
 
 ---
-
-## 🔧 PID Tuning
-
-The PID parameters were determined using the **Ziegler-Nichols tuning method**:
-
-- **K<sub>P</sub> = 540**  
-- **K<sub>I</sub> = 7**  
-- **K<sub>D</sub> = 1.75**
-
-These parameters provided a well-tuned response with good stability and minimal overshoot.
